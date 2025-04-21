@@ -81,7 +81,7 @@ const Navbar = () => {
           ))}
           <li>
             <Link to="/getaquote"
-              className="block text-white text-center bg-blue-600 rounded-xl px-4 py-2 mt-2 hover:bg-blue-700"
+              className="block text-white text-center bg-[#10B981] rounded-xl px-4 py-2 mt-2 hover:bg-blue-700"
             >
               Get a Quote
             </Link>

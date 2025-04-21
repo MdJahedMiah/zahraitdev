@@ -57,7 +57,7 @@ const GetAQuote = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Contact with us
+        Get A Quote
       </motion.h2>
         <p className="text-gray-600 mb-8">
           Fill out the form below to tell us about your project. We'll review it and get back to you with a custom quote.

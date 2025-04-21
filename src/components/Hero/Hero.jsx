@@ -7,9 +7,12 @@ import profileImage from "../../assets/zahraitdev.jpg"; // Updated Image
 const HeroSection = () => {
   return (
     <div className="relative bg-gradient-to-r from-[#007BFF] to-[#10B981] text-white pt-36 md:pt-46 pb-30 px-5" style={{
-      backgroundImage: "url('/zahraitservice.jpg')",
+      backgroundImage: "url('/zahraitdevbg.png')",
       backgroundSize: "cover",
+      backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
     }}>
+      <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center text-center md:text-left">
         {/* Image Section */}
         <motion.div
@@ -63,7 +66,7 @@ const HeroSection = () => {
           <div className="mt-6 flex justify-center md:justify-start space-x-4">
             <Link to="/contact">
               <motion.button
-                className="px-2 md:px-6 py-1 md:py-3 bg-yellow-400 text-black font-semibold rounded shadow-lg hover:bg-yellow-300"
+                className="px-2 md:px-6 py-1 md:py-3 bg-[#10B981] text-black font-semibold rounded shadow-lg hover:bg-yellow-300"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >

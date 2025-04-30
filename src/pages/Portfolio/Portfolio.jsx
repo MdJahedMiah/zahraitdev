@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaLeaf, FaChartLine, FaGlobe, FaYoutube, FaGamepad, FaPagelines, FaReact, FaLaptopCode } from "react-icons/fa";
+import { FaLeaf, FaChartLine, FaGlobe, FaYoutube, FaGamepad, FaPagelines, FaReact, FaLaptopCode, FaInstagram, FaFacebook, FaUserTie } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const projects = [
@@ -73,6 +73,48 @@ const projects = [
     link: "https://mdjahedmiah.github.io/phTube/",
     image: "/src/assets/ph.png" 
   },
+  {
+    title: "YouTube Video SEO Optimization",
+    icon: <FaYoutube className="text-red-500 text-5xl" />,
+    description: "Successfully optimized a YouTube video using advanced SEO techniques, achieving a perfect 100/100 vidIQ SEO score. Improved visibility, rankings, and engagement.",
+    image: "https://i.ibb.co/6JLmJxRk/youtube-video-seo-optimization.jpg",
+  },
+  {
+    title: "High-Performing Facebook Ad Campaign",
+    icon: <FaFacebook className="text-blue-700 text-5xl" />,
+    description: "Managed multiple Facebook ad campaigns, including engagement, promotion, and message campaigns. Optimized targeting, budget management, and high-performing ad strategies.",
+    image: "https://i.ibb.co/1Gdd44bh/fscamp.jpg",
+  },
+  {
+    title: "Lead Generation Projects",
+    icon: <FaUserTie className="text-purple-600 text-5xl" />,
+    description: "Successfully completed lead generation projects across various industries, including B2B & B2C leads, verified email lists, social media leads, and data enrichment.",
+    image: "https://i.ibb.co/hRgQ9n03/l2.jpg",
+  },
+  {
+    title: "YouTube Growth Project",
+    icon: <FaYoutube className="text-red-500 text-5xl" />,
+    description: "Increased YouTube channel subscribers and engagement using strategic content promotion and SEO.",
+    link: "https://docs.google.com/spreadsheets/d/1JdAhNdg_Nl6wz844YO_9jL_ucoXx2YOEyz3tFmztxL0/edit?usp=sharing",
+    image: "https://i.ibb.co/xSXhfztr/yre.jpg"
+    
+  },
+  {
+    title: "Facebook Page Growth",
+    icon: <FaFacebook className="text-blue-600 text-5xl" />,
+    description: "Boosted Facebook page followers and post reach through targeted strategies.",
+    link: "https://docs.google.com/spreadsheets/d/1fK13t46GuRC0Yr5zNSx4uDnjIMIBTvAvX-6lVC0JzgE/edit?usp=sharing",
+    image: "https://i.ibb.co/xV88cC8/fbr.jpg"
+    
+  },
+  {
+    title: "Instagram Account Growth",
+    icon: <FaInstagram className="text-pink-500 text-5xl" />,
+    description: "Successfully increased Instagram followers and engagement through niche-targeted content and promotion.",
+    link:"https://docs.google.com/spreadsheets/d/1bv6SNTRIrWUPF-mXyjsYVBKrYiX0GnjKGR4h0cyQJ_g/edit?usp=sharing",
+    image: "https://i.ibb.co/TDxTCdyW/instar.jpg"
+    
+  },
 
 ];
 
@@ -84,10 +126,10 @@ const Portfolio = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        My Portfolio
+       Our Work
       </motion.h2>
       <p className="text-gray-600 text-lg mb-12">
-        Explore some of my web development and digital marketing projects — from full-stack applications to high-impact SEO & ad campaigns.
+      Explore some of the impactful projects delivered by ZahraITDev — ranging from dynamic full-stack web applications to results-driven digital marketing campaigns. Each project showcases our commitment to performance, design, and measurable growth.
       </p>
       <div className="grid md:grid-cols-3 gap-8">
         {projects.map((project, index) => (

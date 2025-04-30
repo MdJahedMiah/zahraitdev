@@ -1,17 +1,12 @@
-import Bio from "../../components/Bio/Bio"
-import DownloadCV from "../../components/DownloadCV/DownloadCV"
-import Education from "../../components/Education/Education"
-import WorkExperience from "../../components/WorkExperience/WorkExperience"
-
+import AboutCompany from '../../components/AboutCompany/AboutCompany';
+import AboutTeam from '../../components/AboutTeam/AboutTeam';
 const About = () => {
   return (
-    <div>
-      <Bio/>
-      <WorkExperience/>
-      <Education/>
-      <DownloadCV/>
+    <div className='container mx-auto text-center mt-24'>
+      <AboutCompany />
+      <AboutTeam />
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

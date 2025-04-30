@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { 
   FaSearch, FaFacebook, FaGoogle, FaEnvelope, 
-  FaWordpress, FaChartLine, FaCode, FaReact, FaServer 
+  FaWordpress, FaChartLine, FaCode, FaReact, FaServer, FaDatabase, 
 } from "react-icons/fa";
 
 const services = [
@@ -21,11 +21,6 @@ const services = [
     description: "Full-stack web applications using MongoDB, Express, React, and Node.js for dynamic, scalable solutions."
   },
   {
-    icon: <FaWordpress className="text-gray-700 text-5xl" />, 
-    title: "WordPress Website Design", 
-    description: "Build stunning and responsive WordPress websites tailored to your brand and business."
-  },
-  {
     icon: <FaSearch className="text-blue-500 text-5xl" />, 
     title: "SEO Optimization", 
     description: "Boost your website's ranking and organic traffic with expert SEO strategies."
@@ -33,12 +28,32 @@ const services = [
   {
     icon: <FaFacebook className="text-blue-600 text-5xl" />, 
     title: "Social Media Management", 
-    description: "Grow your brand on social platforms with engaging content and targeted audience strategies."
+    description: "Grow your brand on social platforms with engaging content and audience targeting."
   },
   {
     icon: <FaGoogle className="text-red-500 text-5xl" />, 
     title: "Google & Social Media Ads", 
-    description: "Run high-converting paid ads on Google, Facebook, and Instagram to drive traffic and sales."
+    description: "Run high-converting paid ads on Google, Facebook, and Instagram."
+  },
+  {
+    icon: <FaEnvelope className="text-green-500 text-5xl" />, 
+    title: "Email Marketing", 
+    description: "Create compelling email campaigns that convert leads into customers."
+  },
+  {
+    icon: <FaWordpress className="text-gray-700 text-5xl" />, 
+    title: "WordPress Website Design", 
+    description: "Build stunning and responsive WordPress websites tailored to your needs."
+  },
+  {
+    icon: <FaDatabase className="text-purple-500 text-5xl" />, 
+    title: "Data Entry Services", 
+    description: "Accurate data entry, web research, and database management to keep your business organized."
+  },
+  {
+    icon: <FaChartLine className="text-yellow-500 text-5xl" />, 
+    title: "Google Ads Services", 
+    description: "Expert Google Ads management, including PPC, Display, and YouTube Ads."
   },
 
 ];
@@ -51,10 +66,10 @@ const Services = () => {
         initial={{ opacity: 0, y: -20 }} 
         animate={{ opacity: 1, y: 0 }}
       >
-        My Services
+      Our Services
       </motion.h2>
       <p className="text-gray-600 text-lg mb-12">
-        I specialize in full-stack web development using modern technologies, and also provide effective digital marketing services to help businesses grow online.
+      At ZahraITDev, we offer a powerful blend of full-stack web development and digital marketing services designed to build, launch, and grow your online presence. Whether you're starting from scratch or scaling up, we deliver tailored solutions that drive real results.
       </p>
       <div className="grid md:grid-cols-3 gap-8">
         {services.map((service, index) => (
@@ -79,7 +94,7 @@ const Services = () => {
         animate={{ opacity: 1, y: 0 }}
       >
         <a href="mailto:mdjahedahmed12@gmail.com" className="bg-blue-600 text-white px-6 py-3 rounded-xl text-lg hover:bg-blue-700 transition-all">
-          Hire Me Now
+          Need a Service?
         </a>
       </motion.div>
     </div>

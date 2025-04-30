@@ -45,17 +45,59 @@ const services = [
     icon: <FaCss3Alt className="text-blue-700 text-4xl" />,
     metaDescription: "Modern mobile-friendly web design focused on user experience and performance.",
     metaKeywords: "web design, responsive layout, UI/UX, CSS3"
+  },
+  { 
+    title: "SEO Optimization", 
+    description: "Improve your website's Google ranking, attract organic traffic, and increase conversions with data-driven SEO strategies.", 
+    icon: <FaSearch className="text-blue-500 text-4xl" />,
+    metaDescription: "Improve your website's SEO ranking and boost organic traffic with expert SEO optimization services.",
+    metaKeywords: "SEO, website optimization, SEO strategies, increase traffic, SEO expert"
+  },
+  { 
+    title: "Social Media Marketing", 
+    description: "Boost your brand's visibility with strategic Facebook, Instagram, and Google Ads campaigns that drive real engagement and sales.", 
+    icon: <FaBullhorn className="text-red-500 text-4xl" />,
+    metaDescription: "Increase brand visibility with effective social media marketing and Facebook, Instagram, and Google Ads campaigns.",
+    metaKeywords: "social media marketing, Facebook Ads, Instagram Ads, Google Ads, social media"
+  },
+  { 
+    title: "Lead Generation", 
+    description: "Find high-quality leads and turn them into loyal customers through advanced targeting and conversion-focused marketing funnels.", 
+    icon: <FaUsers className="text-green-500 text-4xl" />,
+    metaDescription: "Generate high-quality leads and boost sales with conversion-focused marketing strategies and funnels.",
+    metaKeywords: "lead generation, marketing funnels, high-quality leads, sales conversion"
+  },
+  { 
+    title: "Email Marketing", 
+    description: "Maximize your customer retention and engagement with high-converting email campaigns tailored to your audience.", 
+    icon: <FaEnvelope className="text-yellow-500 text-4xl" />,
+    metaDescription: "Improve customer retention and engagement with targeted, high-converting email marketing campaigns.",
+    metaKeywords: "email marketing, customer retention, high-converting campaigns, email campaigns"
+  },
+  { 
+    title: "WordPress Website Design", 
+    description: "Get a stunning, mobile-friendly, and SEO-optimized website that enhances user experience and boosts business growth.", 
+    icon: <FaLaptopCode className="text-purple-500 text-4xl" />,
+    metaDescription: "Get a beautiful, mobile-optimized, and SEO-friendly WordPress website to improve your business presence online.",
+    metaKeywords: "WordPress design, website design, mobile-friendly website, SEO website"
+  },
+  { 
+    title: "YouTube SEO", 
+    description: "Rank higher on YouTube, increase video views, and grow your audience with strategic video SEO and keyword optimization.", 
+    icon: <FaYoutube className="text-red-600 text-4xl" />,
+    metaDescription: "Boost your YouTube video rankings and views with expert YouTube SEO strategies and keyword optimization.",
+    metaKeywords: "YouTube SEO, video SEO, YouTube ranking, video optimization, YouTube views"
   }
 ]
 
 const Skills = () => {
   return (
     <section className="p-10 bg-gradient-to-r from-blue-50 to-blue-100 pt-20 pb-20">
-      <h2 className="text-4xl font-extrabold text-center text-blue-700 tracking-wide pb-4">My Skills</h2>
+      <h2 className="text-4xl font-extrabold text-center text-blue-700 tracking-wide pb-4">Skills that we develop</h2>
 <p className="text-lg text-center text-gray-600 max-w-5xl mx-auto">
   I specialize in building full-stack web applications using the MERN stack (MongoDB, Express.js, React, and Node.js). With a strong focus on clean code, responsive design, and user experience, I create modern, scalable, and high-performing websites that meet both business and user needs.
 </p>
-      <div className="mt-12 grid gap-8 md:grid-cols-3">
+      <div className="mt-12 grid gap-8 md:grid-cols-4">
         {services.map((service, index) => (
           <motion.article 
             key={index} 

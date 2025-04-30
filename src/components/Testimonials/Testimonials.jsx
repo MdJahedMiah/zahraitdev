@@ -1,16 +1,17 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const testimonials = [
-  { 
-    name: "John Doe", 
-    feedback: "Built a fast, modern website that exceeded my expectations. The design and performance are top-notch!",
-    image: "https://randomuser.me/api/portraits/men/1.jpg"
-  },
   { 
     name: "Imranuzzaman Imran",
     address: "Romford, London, United Kingdom", 
     feedback: "Incredible web development service! My site is now super responsive and looks amazing on all devices.",
     image: "/src/assets/imran.JPG"
+  },
+  { 
+    name: "John Doe", 
+    feedback: "Built a fast, modern website that exceeded my expectations. The design and performance are top-notch!",
+    image: "https://randomuser.me/api/portraits/men/1.jpg"
   },
   { 
     name: "Michael Lee", 
@@ -20,31 +21,51 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => {
+  const [index, setIndex] = useState(0);
+
+  const nextSlide = () => setIndex((prev) => (prev + 1) % testimonials.length);
+  const prevSlide = () => setIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+
   return (
-    <div className="p-12 bg-gradient-to-r from-purple-50 to-indigo-100 my-0.5">
+    <div className="p-12 bg-gradient-to-r from-purple-50 to-indigo-100">
       <h2 className="text-4xl font-extrabold text-center text-indigo-700 tracking-wide py-8">
         What My Clients Say
       </h2>
-      
-      <div className="mt-12 grid gap-8 md:grid-cols-3 mb-8">
-        {testimonials.map((testimonial, index) => (
-          <motion.div 
-            key={index} 
-            className="p-6 border rounded-lg shadow-lg bg-white flex flex-col items-center text-center transform transition duration-300 hover:scale-105 hover:shadow-xl"
-            whileHover={{ scale: 1.05, boxShadow: "0px 4px 20px rgba(75, 0, 130, 0.3)" }}
+
+      <div className="relative w-full max-w-xl mx-auto overflow-hidden">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -100 }}
+            transition={{ duration: 0.4 }}
+            className="p-6 rounded-lg shadow-lg bg-white flex flex-col items-center text-center"
           >
             <img 
-              src={testimonial.image} 
-              alt={testimonial.name} 
+              src={testimonials[index].image} 
+              alt={testimonials[index].name} 
               className="w-20 h-20 rounded-full shadow-md border-4 border-purple-300"
             />
-            <h3 className="text-xl font-semibold mt-4 text-indigo-700">{testimonial.name}</h3>
-            <p className="text-xl font-medium mt-4 text-indigo-500">{testimonial.address}</p>
+            <h3 className="text-xl font-semibold mt-4 text-indigo-700">{testimonials[index].name}</h3>
+            {testimonials[index].address && (
+              <p className="text-md font-medium mt-2 text-indigo-500">{testimonials[index].address}</p>
+            )}
             <p className="text-gray-600 leading-relaxed mt-2 italic font-light">
-              {testimonial.feedback}
+              {testimonials[index].feedback}
             </p>
           </motion.div>
-        ))}
+        </AnimatePresence>
+
+        {/* Navigation Buttons */}
+        <div className="flex justify-between absolute top-1/2 -translate-y-1/2 w-full px-4">
+          <button onClick={prevSlide} className="bg-white p-2 rounded-full shadow hover:bg-indigo-100">
+            ◀
+          </button>
+          <button onClick={nextSlide} className="bg-white p-2 rounded-full shadow hover:bg-indigo-100">
+            ▶
+          </button>
+        </div>
       </div>
     </div>
   );

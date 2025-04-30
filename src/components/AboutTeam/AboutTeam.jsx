@@ -47,7 +47,7 @@ const AboutTeam = () => {
     return (
       <section className="py-20 px-6 bg-gray-50 text-gray-800" id="about-team">
         <div className="max-w-5xl mx-auto text-center mb-16">
-          <h2 className="text-4xl font-bold text-indigo-700 mb-4">Meet Our Team</h2>
+          <h2 className="text-4xl font-bold text-blue-800 mb-4">Meet Our Team</h2>
           <p className="text-lg text-gray-600">
             Our dedicated professionals bring creativity, code, and strategy together to help your business grow.
           </p>

@@ -1,7 +1,7 @@
 const AboutCompany = () => (
     <section className="py-20 text-gray-800" id="about-company">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-indigo-700 mb-4">About ZahraITDev</h2>
+        <h2 className="text-4xl font-bold text-blue-800 mb-4">About ZahraITDev</h2>
         <p className="text-lg text-gray-600">
           ZahraITDev is a growing digital solutions company based in the UK, founded by Md Jahed Miah.
           We specialize in modern web development, creative design, and growth-driven digital marketing. 

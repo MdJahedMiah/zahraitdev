@@ -72,7 +72,8 @@ const GetAQuote = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="border border-gray-300 px-4 py-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="border border-gray-300 px-4 py-3 rounded-lg w-full focus:outline-none focus:ring-2 placeholder-gray-700 focus:ring-blue-500"
+
             />
             <input
               type="email"
@@ -81,33 +82,33 @@ const GetAQuote = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="border border-gray-300 px-4 py-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="border border-gray-300 px-4 py-3 rounded-lg w-full focus:outline-none placeholder-gray-700 focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <select
-              name="service"
-              value={formData.service}
-              onChange={handleChange}
-              required
-              className="border border-gray-300 px-4 py-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-              <option value="">Select a Service</option>
-              <option value="Web Design">Web Design</option>
-              <option value="Web Application">Web Application</option>
-              <option value="SEO/Digital Marketing">SEO/Digital Marketing</option>
-              <option value="Other">Other</option>
-            </select>
+  name="service"
+  value={formData.service}
+  onChange={handleChange}
+  required
+  className="border border-gray-300 px-4 py-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700"
+>
+  <option value="" disabled hidden>Select a Service</option>
+  <option value="Web Design">Web Design</option>
+  <option value="Web Application">Web Application</option>
+  <option value="SEO/Digital Marketing">SEO/Digital Marketing</option>
+  <option value="Other">Other</option>
+</select>
 
             <select
               name="budget"
               value={formData.budget}
               onChange={handleChange}
               required
-              className="border border-gray-300 px-4 py-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="border border-gray-300 px-4 py-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-700"
             >
-              <option value="">Estimated Budget</option>
+              <option value="" disabled hidden>Estimated Budget</option>
               <option value="£100-£300">£100 - £300</option>
               <option value="£300-£700">£300 - £700</option>
               <option value="£700-£1500">£700 - £1500</option>
@@ -122,7 +123,7 @@ const GetAQuote = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            className="border border-gray-300 px-4 py-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="border border-gray-300 px-4 py-3 rounded-lg placeholder-gray-700 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
           <button

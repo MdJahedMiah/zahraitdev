@@ -49,7 +49,7 @@ const Contact = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-200"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-700"
           />
         </div>
         <div className="mb-4">
@@ -60,7 +60,7 @@ const Contact = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-200"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-700"
           />
         </div>
         <div className="mb-4">
@@ -70,7 +70,7 @@ const Contact = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            className="w-full px-4 py-2 border rounded-lg focus:ring focus:ring-blue-200"
+            className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-700"
           ></textarea>
         </div>
         <button

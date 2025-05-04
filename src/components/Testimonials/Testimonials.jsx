@@ -6,7 +6,7 @@ const testimonials = [
     name: "Imranuzzaman Imran",
     address: "Romford, London, United Kingdom", 
     feedback: "Incredible web development service! My site is now super responsive and looks amazing on all devices.",
-    image: "/src/assets/imran.JPG"
+    image: "https://i.ibb.co/3Xrkw6B/imran.jpg"
   },
   { 
     name: "John Doe", 

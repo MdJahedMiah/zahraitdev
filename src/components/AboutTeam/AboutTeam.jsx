@@ -6,30 +6,30 @@ const AboutTeam = () => {
         type: "frontend",
         description: "I specialize in building modern, responsive user interfaces using React.js and Tailwind CSS. I lead ZahraITDev with a vision to deliver clean, scalable, and SEO-friendly websites.",
         expertise: ["React.js", "Tailwind CSS", "JavaScript", "HTML/CSS", "UI/UX Design"],
-        image: "/images/jahed.jpg",
-        website: "https://yourportfolio.com",
-        cv: "/docs/jahed-cv.pdf",
+        image: "https://i.ibb.co/NN3pKTD/jahedpp-removebg-preview.png",
+        website: "https://jahed-portfolio.onrender.com/",
+        cv: "jahedcv.docx",
       },
       {
-        name: "Samiul Hasan",
+        name: "Rezaul Karim",
         role: "Backend Developer",
         type: "backend",
         description: "Focused on scalable backend systems using Node.js and Express. Handles API architecture, database design, and server deployment at ZahraITDev.",
-        expertise: ["Node.js", "Express.js", "MongoDB", "REST API", "Authentication"],
+        expertise: ["Node.js", "Express.js", "MongoDB", "REST API", "Authentication", "Java", "javascript"],
         image: "/images/samiul.jpg",
         website: "https://samiul.dev",
         cv: "/docs/samiul-cv.pdf",
       },
       {
-        name: "Afsana Rahman",
+        name: "Abdur Rahman",
         role: "Digital Marketing Specialist",
         type: "marketing",
-        description: "I manage ZahraITDev’s digital growth strategy through content marketing, SEO, and data-driven social campaigns.",
-        expertise: ["SEO", "Content Marketing", "Google Analytics", "Social Media Marketing"],
-        image: "/images/afsana.jpg",
-        website: "https://afsana.marketing",
-        cv: "/docs/afsana-cv.pdf",
-      },
+        description: "I help businesses grow online by implementing effective SEO strategies, content marketing, and analytics-driven digital campaigns. Proudly driving digital strategy at ZahraITDev.",
+        expertise: ["SEO", "Content Strategy", "Google Analytics", "Social Media Marketing", "Technical SEO"],
+        image: "https://i.ibb.co/G4b7NypV/abdur.jpg", // Make sure to add this image to your public/images folder
+        website: "https://seoabdur.com/",
+        cv: "abdurcv.pdf", // Replace with actual CV path if available
+      }
     ];
   
     const roleColors = {

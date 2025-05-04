@@ -8,70 +8,70 @@ const projects = [
     icon: <FaReact className="text-blue-500 text-5xl" />,
     description: "Developed a full-stack AI-powered marketplace using the MERN stack with features like chatbots, forums, and real-time consultations.",
     link: "https://master-project-client.onrender.com/",
-    image: "/src/assets/taskmate.png" 
+    image: "https://i.ibb.co/hFrJZdvQ/taskmate.png" 
   },
   {
     title: "SEOAbdur – Portfolio Website",
     icon: <FaLaptopCode className="text-green-600 text-5xl" />,
     description: "Created a modern, responsive React-based personal portfolio to showcase digital marketing skills and services.",
     link: "https://seoabdur.com/",
-    image: "/src/assets/abdurp.png" 
+    image: "https://i.ibb.co/s9xKd5HP/abdurp.png" 
   },
   {
     title: "Fruit Burst – Fresh Juice Landing Page",
     icon: <FaLeaf className="text-lime-600 text-5xl" />,
     description: "A visually vibrant landing page for a juice brand, highlighting freshness and natural ingredients using responsive design.",
     link: "https://mdjahedmiah.github.io/fruit-burst/",
-    image: "/src/assets/fruit.png"
+    image: "https://i.ibb.co/hJPtR7q8/fruit.png"
   },
   {
     title: "Gamer Zone – Gaming Store UI",
     icon: <FaGamepad className="text-purple-500 text-5xl" />,
     description: "An engaging and stylish front-end gaming store UI showcasing featured games and categories for gamers.",
     link: "https://mdjahedmiah.github.io/Gamer-Zone/",
-    image: "/src/assets/game.png"
+    image: "https://i.ibb.co/RrdbZsP/game.png"
   },
   {
     title: "Online Flower Shop – Floral Ecommerce",
     icon: <FaPagelines className="text-pink-400 text-5xl" />,
     description: "A soft, elegant landing page design for an online flower shop using HTML, TailwindCSS, and responsive layout techniques.",
     link: "https://mdjahedmiah.github.io/Online-Flower-Shop/",
-    image: "/src/assets/flower.png"
+    image: "https://i.ibb.co/gMXsfV8y/flower.png"
   },
   {
     title: "TechHub – Dynamic Tech Platform",
     icon: <FaGlobe className="text-gray-500 text-5xl" />,
     description: "TechHub is a dynamic online platform that serves as a vibrant hub for technology enthusiasts, innovators, and consumers alike. It is designed to be the go-to destination for discovering and sharing the latest and most exciting tech products.",
     link: "https://assignment-12-aa218.web.app/",
-    image: "/src/assets/techhub.png" 
+    image: "https://i.ibb.co/23BSvVkR/techhub.png" 
   },
   {
     title: "Haven Hotel – Unique Stays",
     icon: <FaGlobe className="text-gray-500 text-5xl" />,
     description: "Welcome to Haven Hotel, where every stay is unique. We offer personalized experiences for every guest, ensuring a memorable and comfortable visit.",
     link: "https://assignment-11-3eb50.web.app/",
-    image: "/src/assets/haven.png" 
+    image: "https://i.ibb.co/Kxgq3zpv/haven.png" 
   },
   {
     title: "BrandShop – Explore What You Need",
     icon: <FaGlobe className="text-gray-500 text-5xl" />,
     description: "Explore what you need at BrandShop – the best way to buy the products you love. Offering a wide range of top-quality products with an easy shopping experience.",
     link: "https://assignment10-b3631.web.app/",
-    image: "/src/assets/brand.png" 
+    image: "https://i.ibb.co/HTkrky69/brand.png" 
   },
   {
     title: "Summer Sale – E-commerce Web App",
     icon: <FaChartLine className="text-yellow-500 text-5xl" />,
     description: "An e-commerce app designed for summer sale promotions and discounts.",
     link: "https://mdjahedmiah.github.io/summerSale/",
-    image: "/src/assets/summer.png" 
+    image: "https://i.ibb.co/YTRHT3R9/summer.png" 
   },
   {
     title: "phTube – YouTube Clone",
     icon: <FaYoutube className="text-red-500 text-5xl" />,
     description: "A YouTube clone app showcasing video streaming, liking, and commenting functionalities.",
     link: "https://mdjahedmiah.github.io/phTube/",
-    image: "/src/assets/ph.png" 
+    image: "https://i.ibb.co/LhQPNHyb/ph.png" 
   },
   {
     title: "YouTube Video SEO Optimization",

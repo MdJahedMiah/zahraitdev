@@ -27,12 +27,12 @@ const TestimonialsSection = () => {
   const prevSlide = () => setIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
 
   return (
-    <div className="p-12 bg-gradient-to-r from-purple-50 to-indigo-100">
+    <div className="p-12 bg-gradient-to-r from-blue-100 to-blue-100">
       <h2 className="text-4xl font-extrabold text-center text-indigo-700 tracking-wide py-8">
         What My Clients Say
       </h2>
 
-      <div className="relative w-full max-w-xl mx-auto overflow-hidden">
+      <div className="relative w-full max-w-xl mx-auto overflow-hidden bg-gradient-to-r from-purple-50 to-indigo-100">
         <AnimatePresence mode="wait">
           <motion.div
             key={index}
@@ -59,10 +59,10 @@ const TestimonialsSection = () => {
 
         {/* Navigation Buttons */}
         <div className="flex justify-between absolute top-1/2 -translate-y-1/2 w-full px-4">
-          <button onClick={prevSlide} className="bg-white p-2 rounded-full shadow hover:bg-indigo-100">
+          <button onClick={prevSlide} className="bg-black p-2 rounded-full shadow hover:bg-indigo-400">
             ◀
           </button>
-          <button onClick={nextSlide} className="bg-white p-2 rounded-full shadow hover:bg-indigo-100">
+          <button onClick={nextSlide} className="bg-black p-2 rounded-full shadow hover:bg-indigo-400">
             ▶
           </button>
         </div>

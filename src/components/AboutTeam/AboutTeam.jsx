@@ -16,7 +16,7 @@ const AboutTeam = () => {
         type: "backend",
         description: "Focused on scalable backend systems using Node.js and Express. Handles API architecture, database design, and server deployment at ZahraITDev.",
         expertise: ["Node.js", "Express.js", "MongoDB", "REST API", "Authentication", "Java", "javascript"],
-        image: "/images/samiul.jpg",
+        image: "https://media.licdn.com/dms/image/v2/D5603AQE58QR0lqigjQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1698750405349?e=1753315200&v=beta&t=GGtPFNn9LOpLCslKVwziQnP0uQrjIf4SlImE3OsXH84",
         website: "https://samiul.dev",
         cv: "/docs/samiul-cv.pdf",
       },

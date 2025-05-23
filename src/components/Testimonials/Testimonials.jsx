@@ -59,10 +59,10 @@ const TestimonialsSection = () => {
 
         {/* Navigation Buttons */}
         <div className="flex justify-between absolute top-1/2 -translate-y-1/2 w-full px-4">
-          <button onClick={prevSlide} className="bg-black p-2 rounded-full shadow hover:bg-indigo-400">
+          <button onClick={prevSlide} className="p-2 rounded-full shadow hover:bg-indigo-400">
             ◀
           </button>
-          <button onClick={nextSlide} className="bg-black p-2 rounded-full shadow hover:bg-indigo-400">
+          <button onClick={nextSlide} className="p-2 rounded-full shadow hover:bg-indigo-400">
             ▶
           </button>
         </div>

@@ -95,7 +95,7 @@ const Skills = () => {
     <section className="p-10 bg-gradient-to-r from-blue-50 to-blue-100 pt-20 pb-20">
       <h2 className="text-4xl font-extrabold text-center text-blue-700 tracking-wide pb-4">Skills that we develop</h2>
 <p className="text-lg text-center text-gray-600 max-w-5xl mx-auto">
-  I specialize in building full-stack web applications using the MERN stack (MongoDB, Express.js, React, and Node.js). With a strong focus on clean code, responsive design, and user experience, I create modern, scalable, and high-performing websites that meet both business and user needs.
+  We specialize in building full-stack web applications using the MERN stack (MongoDB, Express.js, React, and Node.js). With a strong focus on clean code, responsive design, and user experience, I create modern, scalable, and high-performing websites that meet both business and user needs.
 </p>
       <div className="mt-12 grid gap-8 md:grid-cols-4">
         {services.map((service, index) => (

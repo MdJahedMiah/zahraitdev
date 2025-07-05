@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { FaLaptopCode } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,17 +18,9 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-white shadow-md p-6 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="cursor-pointer flex items-center space-x-1">
-          <svg
-            className="text-4xl font-black"
-            width="100"
-            height="60"
-            viewBox="0 0 100 60"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <text x="40" y="40" fill="#007BFF">
-              &lt;Z&gt;
-            </text>
-          </svg>
+          <div className="w-14">
+            <img src={logo} alt="" />
+          </div>
           <h1
             className="text-4xl font-extrabold mb-1 text-transparent bg-clip-text bg-gradient-to-r from-[#007BFF] to-[#10B981]"
             style={{ fontFamily: "Poppins, sans-serif" }}
